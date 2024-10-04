@@ -6,7 +6,7 @@ I am working as a Machine Learning Engineer, passionate about leveraging artific
 
 ## 🚀 About Me
 
-- 🔭 I am currently immersed in cutting-edge research in machine learning, specializing in Computer Vision.
+- 🔭 I am currently immersed in cutting-edge research in machine learning, specializing in Natural Language Processing, and Computer Vision.
 - 🌟 I am passionate about leveraging machine learning and artificial intelligence to tackle real-world challenges and make a positive impact on society.
 - 💼 As a tech enthusiast, I am committed to continuous learning and professional development, exploring new technologies and methodologies to enhance my skills and knowledge.
 
