@@ -1,6 +1,6 @@
 # Hi, I'm Md. Mutasim Billah Abu Noman Akanda! 👋
 
-I am working as a Machine Learning Engineer at Apurba Technologies Ltd., passionate about leveraging artificial intelligence to solve real-world problems. My journey involves extensive research and development in machine learning, driven by a curiosity for technology and a dedication to excellence.
+I am working as a Machine Learning Engineer, passionate about leveraging artificial intelligence to solve real-world problems. My journey involves extensive research and development in machine learning, driven by a curiosity for technology and a dedication to excellence.
 
 ![noman024's Stats](https://github-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
 
