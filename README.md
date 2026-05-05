@@ -2,7 +2,7 @@
 
 I am working as a Senior Machine Learning Engineer, passionate about leveraging artificial intelligence to solve real-world problems. With 3+ years of experience developing enterprise AI/ML solutions, I specialize in computer vision, NLP, and LLMs with a proven track record of 60%+ performance improvements and 92%+ model accuracy. My journey involves extensive research and development in machine learning, driven by a curiosity for technology and a dedication to excellence.
 
-![noman024's Stats](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&v=2)
+![noman024's Stats](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&custom_title=noman024%27s%20GitHub%20Stats&card_width=520&v=3)
 
 ## 🚀 About Me
 
@@ -44,6 +44,6 @@ I am working as a Senior Machine Learning Engineer, passionate about leveraging 
 
 Thanks for visiting! Let's connect and explore the fascinating world of technology together. 🚀
 
-_Self-hosted GitHub stats:_ The badge loads from **`noman024-readme-stats.vercel.app`**. This repo ships a **[Deploy README stats (Vercel)](.github/workflows/deploy-readme-stats.yml)** workflow. Add Action secrets: **`VERCEL_TOKEN`** ([Vercel](https://vercel.com/account/tokens)) and **`STATS_GITHUB_PAT`** (GitHub [classic PAT](https://github.com/settings/tokens): enable **`read:user`** and **`repo`** so `count_private=true` and GraphQL calls work; the workflow maps this to Vercel env **`PAT_1`**). Optional: **`VERCEL_TEAM_ID`** if the project is under a Vercel team. Then **Actions → Deploy README stats (Vercel) → Run workflow**. Verify: [SVG API](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&v=2). If the README preview still shows an old error image, GitHub’s Camo cache kept the previous URL; bump **`v=`** (e.g. `v=3`) and push again.
+_Self-hosted GitHub stats:_ The badge loads from **`noman024-readme-stats.vercel.app`**. This repo ships a **[Deploy README stats (Vercel)](.github/workflows/deploy-readme-stats.yml)** workflow. Add Action secrets: **`VERCEL_TOKEN`** ([Vercel](https://vercel.com/account/tokens)) and **`STATS_GITHUB_PAT`** (GitHub [classic PAT](https://github.com/settings/tokens): enable **`read:user`** and **`repo`** so `count_private=true` and GraphQL calls work; the workflow maps this to Vercel env **`PAT_1`**). Optional: **`VERCEL_TEAM_ID`** if the project is under a Vercel team. Then **Actions → Deploy README stats (Vercel) → Run workflow**. Verify: [SVG API](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&custom_title=noman024%27s%20GitHub%20Stats&card_width=520&v=3). If the README preview still shows an old error image, GitHub’s Camo cache kept the previous URL; bump **`v=`** again (for example **`v=4`**) and push again.
 
 ---
