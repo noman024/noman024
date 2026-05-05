@@ -2,7 +2,7 @@
 
 I am working as a Senior Machine Learning Engineer, passionate about leveraging artificial intelligence to solve real-world problems. With 3+ years of experience developing enterprise AI/ML solutions, I specialize in computer vision, NLP, and LLMs with a proven track record of 60%+ performance improvements and 92%+ model accuracy. My journey involves extensive research and development in machine learning, driven by a curiosity for technology and a dedication to excellence.
 
-![noman024's Stats](https://github-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+![noman024's Stats](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
 
 ## 🚀 About Me
 
@@ -43,5 +43,7 @@ I am working as a Senior Machine Learning Engineer, passionate about leveraging 
 - Explore my projects on [GitHub](https://github.com/noman024)
 
 Thanks for visiting! Let's connect and explore the fascinating world of technology together. 🚀
+
+_Self-hosted GitHub stats:_ The badge loads from **`noman024-readme-stats.vercel.app`**. This repo ships a **[Deploy README stats (Vercel)](.github/workflows/deploy-readme-stats.yml)** workflow. Add repository secrets: **`VERCEL_TOKEN`** ([Vercel](https://vercel.com/account/tokens), required), optional **`STATS_GITHUB_PAT`** ([GitHub PAT](https://github.com/settings/tokens) — classic `read:user`, plus `repo` if you rely on **`count_private=true`**), optional **`VERCEL_TEAM_ID`** (only if this Vercel project lives under a team). Push, then **Actions → Deploy README stats (Vercel) → Run workflow**. Verify: [SVG API](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true).
 
 ---
