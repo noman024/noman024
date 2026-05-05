@@ -1,7 +1,8 @@
 # Deploys https://github.com/anuraghazra/github-readme-stats to Vercel.
 # Secrets (repo Settings → Secrets and variables → Actions):
 #   VERCEL_TOKEN        — https://vercel.com/account/tokens (required)
-#   STATS_GITHUB_PAT    — GitHub PAT for PAT_1 (optional; omit for public-only stats)
+#   STATS_GITHUB_PAT    — GitHub PAT stored in Vercel as PAT_1 (required)
+#                         Classic: read:user + repo (private contributions / count_private)
 #   VERCEL_TEAM_ID      — Team id or slug on Vercel (optional; personal accounts leave unset)
 #
 # After the first successful run, the profile README badge URL should resolve:
@@ -36,7 +37,7 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Link project, optionally set PAT_1, production deploy
+      - name: Link project, set PAT_1 on Vercel, production deploy
         working-directory: ghs
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -46,6 +47,12 @@ jobs:
           set -euo pipefail
           if [[ -z "${VERCEL_TOKEN}" ]]; then
             echo "Missing repository secret VERCEL_TOKEN. Create one at https://vercel.com/account/tokens"
+            exit 1
+          fi
+          if [[ -z "${STATS_GITHUB_PAT}" ]]; then
+            echo "Missing repository secret STATS_GITHUB_PAT."
+            echo "github-readme-stats requires env PAT_1 (see https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own)."
+            echo "Create a GitHub PAT (classic: read:user + repo for private stats), add it as STATS_GITHUB_PAT, re-run this workflow."
             exit 1
           fi
 
@@ -61,15 +68,15 @@ jobs:
             --project noman024-readme-stats \
             "${TEAM[@]}"
 
-          if [[ -n "${STATS_GITHUB_PAT}" ]]; then
-            npx vercel@53.1.1 env add PAT_1 production \
+          for env_name in production preview; do
+            npx vercel@53.1.1 env add PAT_1 "${env_name}" \
               --token "${VERCEL_TOKEN}" \
               --value "${STATS_GITHUB_PAT}" \
-              --yes --sensitive --force
-          else
-            echo "STATS_GITHUB_PAT not set; deploying without PAT_1 (public stats only; count_private may be limited)."
-          fi
+              --yes --sensitive --force \
+              "${SCOPE_FLAG[@]}"
+          done
 
           npx vercel@53.1.1 deploy --prod --yes \
             --token "${VERCEL_TOKEN}" \
+            -e "PAT_1=${STATS_GITHUB_PAT}" \
             "${SCOPE_FLAG[@]}"
