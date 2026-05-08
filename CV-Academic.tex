@@ -1,0 +1,200 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fontawesome}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{3.60004pt}
+
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\hypersetup{
+  pdftitle={Academic CV -- Md. Mutasim Billah Abu Noman Akanda},
+  pdfauthor={Md. Mutasim Billah Abu Noman Akanda},
+  pdfsubject={PhD applicant in AI/ML; document AI for low-resource languages; reproducible machine learning},
+  pdfkeywords={PhD applicant, document AI, OCR, low-resource languages, Bengali NLP, reproducible ML, research methodology, ACM, Springer}
+}
+
+\newcommand{\cvItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\cvSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\cvSubItem}[2]{\cvItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\cvListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\cvListEnd}{\end{itemize}}
+\newcommand{\cvItemListStart}{\begin{itemize}[itemsep=2pt,parsep=0pt,topsep=3pt,leftmargin=14pt]}
+\newcommand{\cvItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textsc{Md. Mutasim Billah Abu Noman Akanda}} \\ \vspace{4pt}
+    {\small \textbf{PhD Applicant (Fall 2027) \textbullet{} AI/ML Research}} \\ \vspace{4pt}
+    \footnotesize
+    \faPhone\ +880-1773272649 \quad
+    \href{https://noman024.github.io/}{\faGlobe\ Website} \quad
+    \href{mailto:mutasim.billah024@gmail.com}{\faEnvelope\ Email} \quad
+    \href{https://www.linkedin.com/in/noman024/}{\faLinkedin\ LinkedIn} \quad
+    \href{https://github.com/noman024}{\faGithub\ GitHub}
+\end{center}
+
+\section{Research Interests}
+\cvListStart
+\item[] \small
+Document AI and OCR for low-resource languages, robust ML under distribution shift, and efficient multimodal systems (LLM/VLM) with reproducible evaluation. Current focus: document layout analysis, handwritten OCR, retrieval-augmented systems, and practical methods that connect scientific rigor to real-world deployment constraints.
+\cvListEnd
+
+\section{Education}
+\cvListStart
+\cvSubheading
+  {University of Liberal Arts Bangladesh (ULAB)}{Dhaka, Bangladesh}
+  {B.Sc.\ Computer Science and Engineering}{Jun 2019 -- Feb 2023}
+\item[] \small
+  \textbf{CGPA:} 3.96/4.00 \quad \textbf{Distinction:} Summa Cum Laude (top 1\%; conferred May 2024) \\
+  \textbf{Honors:} Vice Chancellor's Honors List; Dean's List Scholarship (3$\times$) \\
+  \textbf{Relevant coursework:} Machine Learning, Artificial Intelligence, Computer Vision, Natural Language Processing, Algorithms, Software Engineering
+\cvListEnd
+
+\section{Publications}
+\cvListStart
+\cvItem
+    {\textbf{Akanda, M.B.A.N.}, Ahmed, M., Rabby, A.S.A., \& Rahman, F.}
+    {\textit{Optimum Deep Learning Method for Document Layout Analysis in Low Resource Languages.} ACM Southeast Conference (ACM SE'24), 199--204. \href{https://doi.org/10.1145/3603287.3651184}{doi:10.1145/3603287.3651184}}
+\cvItem
+    {\textbf{Akanda, M.B.A.N.}, Prodhan, M., Sarwar, S., Raatul, A.M., Paul, B.}
+    {\textit{Voice Controlled Home Automation with Cloud-Based Environment Monitoring System.} ICTCS 2022, Lecture Notes in Networks and Systems, vol.\ 623, Springer, Singapore. \href{https://doi.org/10.1007/978-981-19-9638-2_21}{doi:10.1007/978-981-19-9638-2\_21}}
+\cvListEnd
+
+\section{Research Profile}
+\cvListStart
+\cvItem{Primary theme}{Document intelligence in low-resource settings: layout analysis, printed/handwritten OCR, and robust extraction from noisy real-world documents.}
+\cvItem{Secondary theme}{Efficient multimodal ML systems (LLM/VLM and speech pipelines), including quantization, retrieval augmentation, and reliability-aware evaluation.}
+\cvItem{Research style}{Problem-driven experimentation with emphasis on reproducibility, baseline comparisons, and deployment-aware validation.}
+\cvListEnd
+
+\section{Research and Professional Experience}
+\cvListStart
+
+\cvSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh}
+{Senior Machine Learning Engineer}{Sep 2025 -- present}
+\cvItemListStart
+  \cvItem{Document AI and OCR systems}{Worked on enterprise Bengali OCR and document layout analysis pipelines at operational scale (\textbf{10,000+} documents/day), with focus on robust extraction from heterogeneous document formats.}
+  \cvItem{Efficiency-aware model optimization}{Applied quantization to multimodal vision-language components (Qwen2.5-VL), reducing memory footprint by approximately \textbf{4$\times$} while preserving practical task performance.}
+  \cvItem{Evaluation-oriented engineering}{Developed alignment components that improved conversion reliability (\textbf{+25\%} conversion accuracy in internal benchmarks), reducing downstream manual correction load.}
+  \cvItem{Research relevance}{Translated production bottlenecks (layout variance, OCR noise, memory limits) into experimentable questions around model robustness and efficiency.}
+\cvItemListEnd
+
+\cvSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh}
+{Machine Learning Engineer}{Mar 2023 -- May 2024}
+\cvItemListStart
+  \cvItem{Low-resource document layout analysis}{Built and evaluated YOLOv8-based layout models for Bengali document structures (\textbf{85\%+} internal accuracy), supporting OCR quality improvements in deployment.}
+  \cvItem{Inference optimization}{Implemented 8-bit quantization and measured \textbf{2$\times$} faster inference with reduced memory usage, enabling broader operational deployment.}
+  \cvItem{Research dissemination}{Contributed to studies that led to publications at ACM SE'24 and Springer (ICTCS/LNNS).}
+\cvItemListEnd
+
+\cvSubheading{Pixalate Inc.}{Remote (California, USA)}
+{Data Scientist}{Mar 2025 -- Aug 2025}
+\cvItemListStart
+  \cvItem{Web-scale ML systems}{Designed AI-assisted ad-network detection workflows over large crawling pipelines (\textbf{2M+} sites), combining learned and deterministic methods.}
+  \cvItem{Methodological trade-off analysis}{Used hybrid detection strategies to balance precision, throughput, and infrastructure cost in production settings.}
+\cvItemListEnd
+
+\cvSubheading{Green Pants Studio}{Remote (Texas, USA)}
+{AI Engineer}{Jun 2024 -- May 2025}
+\cvItemListStart
+  \cvItem{Applied ML for valuation and mapping}{Developed ML-supported product valuation and data mapping workflows for large eCommerce streams.}
+  \cvItem{Pipeline quality and reliability}{Improved scraper throughput and deployment reliability through modular services and containerized delivery.}
+\cvItemListEnd
+
+% \cvSubheading{Independent and Open-Source Work}{Remote}
+% {Project Lead / Contributor}{2023 -- present}
+% \cvItemListStart
+%   \cvItem{SenseScan}{Built a Bengali handwritten OCR pipeline (detection, recognition, reading-order assembly) exposed through reproducible API endpoints.}
+%   \cvItem{Voice Healthcare Agent}{Developed a speech-enabled conversational system to investigate latency/reliability trade-offs across REST, WebSocket, and optional WebRTC transport paths.}
+%   \cvItem{GradConnectAI}{Implemented evidence-based matching and retrieval workflows for graduate supervision discovery, relevant to ranking and explainable recommendation research.}
+% \cvItemListEnd
+
+\cvListEnd
+
+\section{Teaching Experience}
+\cvListStart
+\cvSubheading{University of Liberal Arts Bangladesh (ULAB)}{Dhaka, Bangladesh}
+{Teaching Assistant, Department of Computer Science and Engineering}{Feb 2021 -- Jan 2023}
+\cvItemListStart
+  \cvItem{Courses supported}{Introduction to Programming, Object-Oriented Programming, Artificial Intelligence, Software Engineering}
+  \cvItem{Instructional duties}{Led laboratory sessions and tutorials for cohorts of \textbf{30+} students; prepared lab materials and evaluated assignments/projects.}
+  \cvItem{Mentoring}{Guided students on programming and introductory AI/ML projects during office hours and practical sessions.}
+\cvItemListEnd
+\cvListEnd
+
+\section{Selected Projects (Research-Relevant)}
+\cvListStart
+\cvItem{SenseScan (Bengali handwritten OCR)}{Pipeline with EAST/LANMS detection, CRNN recognition, and reading-order assembly; designed for experimentation in low-resource OCR settings. \href{https://github.com/noman024/SenseScan}{GitHub}}
+\cvItem{Voice Healthcare Agent}{Multimodal conversational pipeline (FastAPI + Next.js + local voice stack) useful for studying latency/reliability trade-offs in speech-enabled LLM systems. \href{https://github.com/noman024/healthcare-voice-ai-agent}{GitHub}}
+\cvItem{GradConnectAI}{Evidence-based matching system for graduate supervision discovery; relevant to ranking/retrieval experimentation in academic recommendation settings. \href{https://github.com/noman024/gradconnectai}{GitHub}}
+\cvListEnd
+
+\section{Reproducibility and Tooling}
+\cvListStart
+\cvItem{Experiment support}{Use MLflow/Weights \& Biases style tracking and test-driven workflows (pytest/Vitest) to improve repeatability and regression control in ML pipelines.}
+\cvItem{Deployment-aware reproducibility}{Maintain API-first project structures (FastAPI, Docker, CI) to align research prototypes with executable, verifiable systems.}
+\cvItem{Data and evaluation mindset}{Prioritize clear evaluation criteria, metric definitions, and error-analysis loops when moving from prototype to production conditions.}
+\cvListEnd
+
+% \section{PhD Application Focus (Fall 2027)}
+% \cvListStart
+% \cvItem{Target area}{Artificial Intelligence / Machine Learning programs with strengths in document understanding, computer vision, NLP, and multimodal systems.}
+% \cvItem{Intended contribution}{Bridge rigorous experimental research with deployable ML systems for low-resource and high-variability real-world settings.}
+% \cvItem{Advisor alignment strategy}{Seek labs working on OCR/document AI, robust perception, low-resource learning, and efficient large-model inference.}
+% \cvListEnd
+
+\section{Technical Skills}
+\cvListStart
+\cvSubItem{Languages}{Python, TypeScript, SQL}
+\cvSubItem{ML/AI}{PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenCV, quantization workflows}
+\cvSubItem{LLM/NLP}{RAG pipelines, vector search (pgvector/ChromaDB), vLLM, Ollama}
+\cvSubItem{Systems}{FastAPI, Docker, PostgreSQL, Redis, SQLite, async crawling and data pipelines}
+\cvSubItem{Experimentation}{MLflow, Weights \& Biases, pytest, Vitest}
+\cvListEnd
+
+\section{Honors and Awards}
+\cvListStart
+\cvItem{Summa Cum Laude}{Top 1\% of graduating class (May 2024)}
+\cvItem{Vice Chancellor's Honors List}{Scholarship recipient}
+\cvItem{Dean's List Scholarship}{Awarded 3 times}
+\cvItem{Programming contests}{Problem setter and award recipient in ULAB Take Off contests}
+\cvListEnd
+
+\end{document}

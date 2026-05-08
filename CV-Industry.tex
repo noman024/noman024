@@ -1,0 +1,262 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fontawesome}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{3.60004pt}
+
+% Margins (standard for this template)
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\hypersetup{
+  pdftitle={CV -- Md. Mutasim Billah Abu Noman Akanda},
+  pdfauthor={Md. Mutasim Billah Abu Noman Akanda},
+  pdfsubject={Machine learning engineer, document AI, NLP, production ML systems},
+  pdfkeywords={OCR, document layout analysis, Bengali NLP, PyTorch, LLM, RAG, FastAPI, computer vision, LiveKit, WebRTC, voice AI, healthcare agent, Piper, teaching assistant},
+}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt,parsep=0pt,topsep=3pt,leftmargin=14pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+% One \item[] wraps title row + nested bullets (avoids broken list layout)
+\newcommand{\projectBlockStart}[2]{%
+  \item[]
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{-2pt}
+  \begin{itemize}[itemsep=2pt,parsep=0pt,topsep=2pt,leftmargin=14pt]
+}
+\newcommand{\projectBlockEnd}{\end{itemize}\vspace{4pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textsc{Md. Mutasim Billah Abu Noman Akanda}} \\ \vspace{4pt}
+    {\small \textbf{Senior Machine Learning Engineer \textbullet{} Data Scientist \textbullet{} AI Researcher}} \\ \vspace{4pt}
+    % {\footnotesize \textit{Open to remote roles worldwide; willing to relocate for the right opportunity.}} \\ \vspace{6pt}
+    \footnotesize
+    \faPhone\ +880-1773272649 \quad
+    \href{https://noman024.github.io/}{\faGlobe\ Portfolio} \quad
+    \href{mailto:mutasim.billah024@gmail.com}{\faEnvelope\ Email} \quad
+    \href{https://www.linkedin.com/in/noman024/}{\faLinkedin\ LinkedIn} \quad
+    \href{https://github.com/noman024}{\faGithub\ GitHub}
+\end{center}
+
+\section{Professional Summary}
+\resumeSubHeadingListStart
+\item[] \small
+ML engineer and researcher with \textbf{3+ years} shipping production systems: OCR and document AI (including low-resource languages), web-scale crawling, voice interfaces, and RAG. \textbf{2+ years} as undergraduate teaching assistant in CS/AI (labs, grading, project mentoring). Full stack from literature and experimentation to deployment (Python, PyTorch, LLM/VLM optimization and quantization, FastAPI, Docker). Peer-reviewed publications in \textbf{ACM} and \textbf{Springer}.
+\resumeSubHeadingListEnd
+
+% \section{Research Interests}
+% \resumeSubHeadingListStart
+% \resumeSubItem{Document AI \& computer vision}
+%   {Layout analysis; printed and handwritten OCR; scene text; structure from PDFs/images (including Bengali/Bangla).}
+% \resumeSubItem{Machine learning, LLMs, and NLP}
+%   {Deep models for vision and text; efficient inference and quantization (incl.\ VLMs); RAG, retrieval, semantic search.}
+% \resumeSubItem{ML systems \& evaluation}
+%   {APIs and microservices for ML; large-scale crawling and pipelines; validation and cost--latency--accuracy tradeoffs.}
+% \resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh (on-site)}
+{Senior Machine Learning Engineer}{Sep 2025 -- present}
+\resumeItemListStart
+    \resumeItem{Borno OCR (ICT Ministry)}{Enterprise Bengali OCR, layout analysis, PDF/image to editable DOCX.}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item Integrated \textbf{dots.ocr} for Bengali; \textbf{10{,}000+} documents/day.
+        \item Qwen2.5-VL 4-bit quantization: $\sim$\textbf{4$\times$} memory reduction, $\sim$\textbf{40\%} lower infrastructure cost.
+        \item Bbox alignment: \textbf{+25\%} conversion accuracy, $\sim$\textbf{80\%} fewer manual fixes.
+    \end{itemize}
+    \resumeItem{AI Interview Bot}{Real-time voice interview platform---LiveKit WebRTC, session-isolated RAG, automated evaluation.}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item End-to-end voice pipeline (STT/LLM/TTS): $\sim$\textbf{sub-3s} average turn latency; \textbf{4-tier} TTS fallback for $\sim$\textbf{99\%} synthesis uptime.
+        \item Session-isolated RAG: \textbf{10+} concurrent interviews with independent context; \textbf{zero} cross-session data leakage.
+        \item Automated evaluation replacing $\sim$\textbf{20 min} manual review per candidate; job-level analytics across \textbf{multiple roles}.
+    \end{itemize}
+\resumeItemListEnd
+
+\resumeSubheading{Pixalate Inc.}{Remote (California, USA)}
+{Data Scientist}{Mar 2025 -- Aug 2025}
+\resumeItemListStart
+    \resumeItem{Focus}{Ad Intel Crawler---AI-assisted ad-network detection at web scale.}
+    \item \textbf{Impact:}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item Detection pipeline: \textbf{73\%} accuracy, \textbf{2M+} sites, \textbf{50K+} pages/day.
+        \item Deterministic matchers where suitable: \textbf{\$50K+/year} compute savings.
+        \item Crawler orchestration: \textbf{1M+} requests/day (async).
+    \end{itemize}
+\resumeItemListEnd
+
+\resumeSubheading{Green Pants Studio}{Remote (Texas, USA)}
+{AI Engineer}{Jun 2024 -- May 2025}
+\resumeItemListStart
+    \resumeItem{Focus}{Vendidit---eCommerce scraping, valuation, and data mapping.}
+    \item \textbf{Impact:}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item Scraper: \textbf{+40\%} throughput, \textbf{100K+} products/day.
+        \item OLS valuation: \textbf{92\%} accuracy; \textbf{60\%} fewer pricing errors.
+        \item Dockerized services: \textbf{50\%} faster deploys; \textbf{35\%} reliability improvement.
+    \end{itemize}
+\resumeItemListEnd
+
+\resumeSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh (on-site)}
+{Machine Learning Engineer}{Mar 2023 -- May 2024}
+\resumeItemListStart
+    \resumeItem{Focus}{Bengali OCR (ICT Ministry)---layout, recognition, scene text.}
+    \item \textbf{Impact:}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item YOLOv8 DLA: \textbf{85\%+} on Bengali documents.
+        \item 8-bit quantized DLA: \textbf{2$\times$} faster inference, \textbf{50\%} less memory.
+        \item Co-authored \textbf{ACM SE'24} and \textbf{Springer} (ICTCS) papers.
+    \end{itemize}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{University of Liberal Arts Bangladesh (ULAB)}{Dhaka, Bangladesh (on-site)}
+{Teaching Assistant, Department of Computer Science and Engineering}{Feb 2021 -- Jan 2023}
+\resumeItemListStart
+    \resumeItem{Courses}{Introduction to Programming, Object-Oriented Programming, Artificial Intelligence, Software Engineering.}
+    \item \textbf{Responsibilities:}
+    \begin{itemize}[itemsep=1pt,parsep=0pt,topsep=2pt]
+        \item Led lab sections and tutorials (\textbf{30+} students per course); prepared lab materials and assessed coursework.
+        \item Held office hours; mentored students on programming and AI/ML course projects.
+    \end{itemize}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages \& APIs}{Python (primary), TypeScript, SQL; REST; modular services}
+\resumeSubItem{ML / AI}{PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenCV; EAST/CRNN OCR; QAT; vLLM, Ollama, faster-whisper, Piper (TTS)}
+\resumeSubItem{LLM / NLP}{LangChain, RAG, ChromaDB, GPT/Qwen workflows, semantic search}
+\resumeSubItem{Backend \& data}{FastAPI, WebSockets, LiveKit/WebRTC, SQLite, Redis, PostgreSQL, pgvector, SQLAlchemy, Pydantic}
+\resumeSubItem{Automation}{Playwright, Crawl4AI, browser-use, BeautifulSoup, Scrapy, async pipelines}
+\resumeSubItem{Frontend \& DevOps}{Next.js, React, Gradio, Docker, Compose, GitHub Actions, pytest, Vitest}
+\resumeSubItem{Analytics}{pandas, NumPy, Matplotlib, Seaborn, MLflow, W\&B}
+\resumeSubItem{Collaboration}{Git/GitHub, Jira, Notion, Slack, Agile}
+\resumeSubHeadingListEnd
+
+% \section{Languages}
+% \resumeSubHeadingListStart
+% \resumeSubItem{English}{Professional proficiency (reading, writing, technical communication).}
+% \resumeSubItem{Bengali (Bangla)}{Native.}
+% \resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {University of Liberal Arts Bangladesh (ULAB)}{Dhaka, Bangladesh}
+  {B.Sc.\ Computer Science and Engineering}{Jun 2019 -- Feb 2023}
+\item[] \small
+  \textbf{CGPA:} 3.96/4.00. \textbf{Summa Cum Laude} (top 1\%; conferred May 2024). Vice Chancellor's Honors List; Dean's List Scholarship (3$\times$). \\
+  \textbf{Coursework:} ML, AI, algorithms, software engineering, computer vision, NLP.
+\resumeSubHeadingListEnd
+
+\section{Research \& Technical Projects}
+\resumeSubHeadingListStart
+
+\projectBlockStart{Voice Healthcare Agent}{\href{https://github.com/noman024/healthcare-voice-ai-agent}{\small GitHub}}
+  \item \textbf{FastAPI} API and \textbf{Next.js 14} \texttt{/call} UI: REST/WebSockets for STT/TTS and agent turns; optional \textbf{LiveKit} WebRTC worker reusing same Ollama, faster-whisper, and Piper-backed TTS.
+  \item \textbf{SQLite}-backed tool execution (e.g.\ appointments); session persistence and summaries aligned across REST, WebSocket, and LiveKit paths.
+  \item Optional \textbf{MuseTalk} lip-sync avatar pipeline; pytest (backend), Vitest (frontend), GitHub Actions CI.
+  \item \textit{Python, TypeScript, faster-whisper, Piper, Ollama, Docker Compose (LiveKit).}
+\projectBlockEnd
+
+\projectBlockStart{SenseScan (Bengali handwritten OCR)}{\href{https://github.com/noman024/SenseScan}{\small GitHub}}
+  \item EAST/LANMS detection, CRNN recognition (QAT-ready), reading-order assembly.
+  \item FastAPI: \texttt{/plugin} and \texttt{/v1/ocr/handwritten}; optional Gradio; DataParallel multi-GPU.
+  \item \textit{PyTorch, FastAPI, OpenCV, LANMS, Pydantic.}
+\projectBlockEnd
+
+\projectBlockStart{GradConnectAI}{\href{https://github.com/noman024/gradconnectai}{\small GitHub}}
+  \item CV parsing, professor/opportunity discovery, evidence-based matching, outreach drafts.
+  \item \textit{FastAPI, Next.js, TypeScript, PostgreSQL/pgvector, Playwright, Crawl4AI, Docker, GitHub Actions, Ollama/vLLM.}
+\projectBlockEnd
+
+
+% \projectBlockStart{AI Interview Bot (real-time voice interview platform)}{\href{https://github.com/apurbatech/interview-bot}{\small GitHub}}
+%   \item LiveKit WebRTC voice pipeline: faster-whisper STT, Ollama LLM, multi-backend TTS; session-isolated concurrent interviews.
+%   \item Interview engine: CV/JD parsing, ChromaDB RAG, ATS scoring, evaluation worker (LLM rubrics + deterministic fallback), transcript APIs.
+%   \item Rate limiting (Redis/in-memory), prompt injection defense (turn-level), Next.js candidate UI with mic/cam pre-checks.
+%   \item \textit{Python, FastAPI, LiveKit, Next.js, ChromaDB, Redis, pytest, Docker.}
+% \projectBlockEnd
+
+% \projectBlockStart{RAG local document chat}{\href{https://github.com/noman024/rag-based-local-chat-box}{\small GitHub}}
+%   \item Streamlit + ChromaDB, LangChain, Ollama; \textbf{90\%+} query accuracy, sub-second local responses.
+%   \item \textit{Python, Streamlit.}
+% \projectBlockEnd
+
+% \projectBlockStart{Real-time parking spot tracking}{\href{https://github.com/noman024/parking-spot-tracking}{\small GitHub}}
+%   \item YOLOv9 detection/tracking; $\sim$30 FPS; \textbf{92\%+} detection accuracy.
+%   \item \textit{PyTorch, OpenCV, Ultralytics.}
+% \projectBlockEnd
+
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeItem
+    {\textbf{Akanda, M.B.A.N.}, Ahmed, M., Rabby, A.S.A., \& Rahman, F.}
+    {\textit{Optimum Deep Learning Method for Document Layout Analysis in Low Resource Languages.} ACM Southeast Conference (ACM SE'24), 199--204. \href{https://doi.org/10.1145/3603287.3651184}{doi:10.1145/3603287.3651184}}
+\resumeItem
+    {\textbf{Akanda, M.B.A.N.}, Prodhan, M., Sarwar, S., Raatul, A.M., Paul, B.}
+    {\textit{Voice Controlled Home Automation with Cloud-Based Environment Monitoring System.} ICTCS 2022, Lecture Notes in Networks and Systems, vol.\ 623, Springer, Singapore. \href{https://doi.org/10.1007/978-981-19-9638-2_21}{doi:10.1007/978-981-19-9638-2\_21}}
+\resumeSubHeadingListEnd
+
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+\resumeItem{Problem setter}{ULAB Take Off Programming Contest (Summer 2022)}
+\resumeItem{Vice Chancellor's Honors List}{Scholarship (Summer 2021)}
+\resumeItem{2nd Runners-Up}{ULAB Take Off Programming Contest (Fall 2021)}
+\resumeItem{Dean's List Scholarship}{Summer 2020, Fall 2020, Spring 2021}
+\resumeItem{1st Runners-Up}{ULAB Take Off Programming Contest (Spring 2021)}
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,35 @@
+name: Build CV PDFs
+
+on:
+  push:
+    paths:
+      - "CV-Academic.tex"
+      - "CV-Industry.tex"
+      - ".github/workflows/build-cv-pdfs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile industry CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV-Industry.tex
+
+      - name: Compile academic CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV-Academic.tex
+
+      - name: Commit generated PDFs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(cv): regenerate CV PDFs"
+          file_pattern: "CV-Industry.pdf CV-Academic.pdf"

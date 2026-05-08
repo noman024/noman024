@@ -1,48 +1,44 @@
-# Hi, I'm Md. Mutasim Billah Abu Noman Akanda! 👋
+# Md. Mutasim Billah Abu Noman Akanda
 
-I am working as a Senior Machine Learning Engineer, passionate about leveraging artificial intelligence to solve real-world problems. With 3+ years of experience developing enterprise AI/ML solutions, I specialize in computer vision, NLP, and LLMs with a proven track record of 60%+ performance improvements and 92%+ model accuracy. My journey involves extensive research and development in machine learning, driven by a curiosity for technology and a dedication to excellence.
+Dual-track professional profile for AI/ML:
+- **Industry track:** production ML systems, scalable AI services, measurable engineering impact
+- **Academic track:** PhD applicant (Fall 2027), document AI and low-resource ML research
 
 ![noman024's Stats](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&custom_title=noman024%27s%20GitHub%20Stats&card_width=520&v=3)
 
-## 🚀 About Me
+## Quick Navigation
+- **Recruiter / Hiring Manager:** [Industry profile](https://noman024.github.io/#industry), [LinkedIn](https://www.linkedin.com/in/noman024/)
+- **Professor / Admissions Committee:** [Academic profile](https://noman024.github.io/#academic), [Publications](https://noman024.github.io/#publications)
 
-- 🔭 I am currently working as a Senior Machine Learning Engineer at Apurba Technologies Ltd., specializing in document digitization and OCR systems.
-- 🌟 I am passionate about leveraging machine learning and artificial intelligence to tackle real-world challenges and make a positive impact on society.
-- 💼 As a tech enthusiast, I am committed to continuous learning and professional development, exploring new technologies and methodologies to enhance my skills and knowledge.
-- 🚀 I have extensive experience in end-to-end ML pipeline development, from data preprocessing to model deployment, with expertise in working with large-scale datasets and implementing MLOps practices.
+## Industry Track (Applied AI Engineering)
+- Senior Machine Learning Engineer building production OCR, voice AI, and large-scale ML pipelines.
+- Delivered systems at practical scale (10K+ OCR docs/day, multimillion-site analysis pipelines, real-time voice workflows).
+- Focus areas: latency/cost optimization, deployment reliability, asynchronous data/ML architecture, maintainable services.
 
-## My Articles
+## Academic Track (PhD Positioning)
+- Research focus: document AI and OCR for low-resource languages, robust evaluation, and reproducible ML pipelines.
+- Publications in ACM SE'24 and Springer (LNNS).
+- Teaching background: 2+ years as CSE teaching assistant (programming, OOP, AI, software engineering).
+
+## Publications
 - [Optimum Deep Learning Method for Document Layout Analysis in Low Resource Languages](https://doi.org/10.1145/3603287.3651184)
 - [Voice Controlled Home Automation with Cloud-Based Environment Monitoring System](https://doi.org/10.1007/978-981-19-9638-2_21)
 
-## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=python,cplusplus,c,pytorch,tensorflow,keras,opencv,numpy,pandas,scikit-learn,matplotlib,tesseract,beautifulsoup,triton,kafka,docker,aws,sagemaker,streamlit,anaconda,roboflow,jmeter,postman,fastapi,latex,git,linux,bash,pytest,mypy,nmap,zap,metasploit,trello,jira,ganttpro)](https://skillicons.dev)
+## Representative Projects
+- [SenseScan](https://github.com/noman024/SenseScan): Bengali handwritten OCR pipeline (EAST/LANMS + CRNN + API).
+- [Voice Healthcare Agent](https://github.com/noman024/healthcare-voice-ai-agent): full-stack conversational AI system with STT/TTS and optional WebRTC path.
+- [GradConnectAI](https://github.com/noman024/gradconnectai): evidence-based matching and retrieval system for graduate supervision discovery.
 
-## 🌱 Currently Exploring
+## Technical Focus
+- **ML/AI:** PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenCV
+- **LLM systems:** RAG, vector retrieval, vLLM, Ollama, faster-whisper, Piper
+- **Backend/data:** FastAPI, PostgreSQL/pgvector, Redis, SQLite, async crawling pipelines
+- **Engineering ops:** Docker, CI/CD (GitHub Actions), testing (pytest, Vitest)
 
-- 🚀 Advanced Deep Learning: Working with transformer models, CNNs, YOLO, and Large Language Models (LLMs) for complex problem-solving.
-- 🌟 Artificial Intelligence: Implementing AI algorithms and methodologies to create intelligent systems with real-world applications.
-- 💻 Cloud Computing: Deploying scalable applications on AWS and GCP with expertise in containerization and microservices.
-- 📈 Machine Learning Operations (MLOps): Implementing best practices for managing machine learning models in production environments with CI/CD pipelines.
-
- ## 🏆 Achievements
-
-- 🌟 Awarded Summa Cum Laude (April 2024) for academic excellence and exemplary performance.
-- 🏅 Appreciated as a Peer Mentor (Nov 2022) for providing valuable guidance and support to fellow students.
-- 🎓 Received the Vice Chancellor's Honors List Scholarship for Summer 2021 (Jan 2022) in recognition of outstanding academic achievements.
-- 📚 Earned multiple Dean's List Scholarships for Spring 2021 (Sep 2021), Fall 2020 (May 2021), and Summer 2020 (Dec 2020) for maintaining consistently high academic performance.
-- 💻 Successfully set problems in the "ULAB Take off Programming Contest Summer 2022" (Aug 2022), contributing to the competition's success.
-- 🥈 Secured 2nd Runners Up position in the "ULAB Take Off Programming Contest Fall 2021" (Oct 2021), demonstrating strong programming skills.
-- 🥇 Achieved 1st Runners Up position in the "ULAB Take Off Programming Contest Spring 2021" (Feb 2021), excelling in programming challenges.
-- 🚀 Professional Achievements: Led teams of 3+ engineers, achieved 60%+ performance improvements, and developed systems processing 10,000+ documents daily.
-- 💼 Published researcher with papers in ACM SE'24 and Springer conferences, contributing to the advancement of document layout analysis in low-resource languages.
-
-## 📬 Get in Touch
-
-- Connect with me on [LinkedIn](https://www.linkedin.com/in/noman024/)
-- Explore my projects on [GitHub](https://github.com/noman024)
-
-Thanks for visiting! Let's connect and explore the fascinating world of technology together. 🚀
+## Contact
+- LinkedIn: [noman024](https://www.linkedin.com/in/noman024/)
+- Website: [noman024.github.io](https://noman024.github.io/)
+- Email: mutasim.billah024@gmail.com
 
 _Self-hosted GitHub stats:_ The badge loads from **`noman024-readme-stats.vercel.app`**. This repo ships a **[Deploy README stats (Vercel)](.github/workflows/deploy-readme-stats.yml)** workflow. Add Action secrets: **`VERCEL_TOKEN`** ([Vercel](https://vercel.com/account/tokens)) and **`STATS_GITHUB_PAT`** (GitHub [classic PAT](https://github.com/settings/tokens): enable **`read:user`** and **`repo`** so `count_private=true` and GraphQL calls work; the workflow maps this to Vercel env **`PAT_1`**). Optional: **`VERCEL_TEAM_ID`** if the project is under a Vercel team. Then **Actions → Deploy README stats (Vercel) → Run workflow**. Verify: [SVG API](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&custom_title=noman024%27s%20GitHub%20Stats&card_width=520&v=3). If the README preview still shows an old error image, GitHub’s Camo cache kept the previous URL; bump **`v=`** again (for example **`v=4`**) and push again.
 
