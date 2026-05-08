@@ -7,8 +7,8 @@ Dual-track professional profile for AI/ML:
 ![noman024's Stats](https://noman024-readme-stats.vercel.app/api?username=noman024&theme=vue-dark&show_icons=true&hide_border=true&count_private=true&custom_title=noman024%27s%20GitHub%20Stats&card_width=520&v=3)
 
 ## Quick Navigation
-- **Recruiter / Hiring Manager:** [Industry profile](https://noman024.github.io/#industry), [LinkedIn](https://www.linkedin.com/in/noman024/)
-- **Professor / Admissions Committee:** [Academic profile](https://noman024.github.io/#academic), [Publications](https://noman024.github.io/#publications)
+- **Recruiter / Hiring Manager:** [Industry profile](https://noman024.github.io/industry.html), [LinkedIn](https://www.linkedin.com/in/noman024/)
+- **Professor / Admissions Committee:** [Academic profile](https://noman024.github.io/academic.html), [Publications](https://noman024.github.io/#publications)
 
 ## Industry Track (Applied AI Engineering)
 - Senior Machine Learning Engineer building production OCR, voice AI, and large-scale ML pipelines.
