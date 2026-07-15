@@ -34,8 +34,8 @@
 \hypersetup{
   pdftitle={Academic CV -- Md. Mutasim Billah Abu Noman Akanda},
   pdfauthor={Md. Mutasim Billah Abu Noman Akanda},
-  pdfsubject={PhD applicant in AI/ML; document AI for low-resource languages; reproducible machine learning},
-  pdfkeywords={PhD applicant, document AI, OCR, low-resource languages, Bengali NLP, reproducible ML, research methodology, ACM, Springer}
+  pdfsubject={PhD applicant Fall 2027; document AI and low-resource OCR; multimodal systems; reproducible ML},
+  pdfkeywords={PhD applicant, document AI, OCR, low-resource languages, Bengali, layout analysis, multimodal, reproducible ML, ACM SE 2024, Springer}
 }
 
 \newcommand{\cvItem}[2]{
@@ -61,47 +61,42 @@
 
 \begin{center}
     {\LARGE \textsc{Md. Mutasim Billah Abu Noman Akanda}} \\ \vspace{4pt}
-    {\small \textbf{PhD Applicant (Fall 2027) \textbullet{} AI/ML Research}} \\ \vspace{4pt}
+    {\small \textbf{PhD Applicant (Fall 2027) \textbullet{} Document AI and Low-Resource OCR}} \\ \vspace{4pt}
     \footnotesize
     \faPhone\ +880-1773272649 \quad
     \href{https://noman024.github.io/}{\faGlobe\ Website} \quad
     \href{mailto:mutasim.billah024@gmail.com}{\faEnvelope\ Email} \quad
     \href{https://www.linkedin.com/in/noman024/}{\faLinkedin\ LinkedIn} \quad
-    \href{https://github.com/noman024}{\faGithub\ GitHub}
+    \href{https://github.com/noman024}{\faGithub\ GitHub} \quad
+    \href{https://scholar.google.com/citations?user=kR2bOWMAAAAJ}{\faGlobe\ Scholar} \quad
+    \href{https://www.kaggle.com/mutasimbillahnoman}{\faGlobe\ Kaggle}
 \end{center}
 
 \section{Research Interests}
 \cvListStart
 \item[] \small
-Document AI and OCR for low-resource languages, robust ML under distribution shift, and efficient multimodal systems (LLM/VLM) with reproducible evaluation. Current focus: document layout analysis, handwritten OCR, retrieval-augmented systems, and practical methods that connect scientific rigor to real-world deployment constraints.
+Document AI and OCR for low-resource languages (layout analysis, handwriting recognition, layout-aware evaluation); efficient multimodal / VLM adaptation under deployment budgets; biomedical image analysis (MRI/CT DICOM pipelines); reproducible multi-GPU training and metric design. Current focus: Bengali handwritten OCR with parse-success-gated text-word-layout scoring, sweep-guided model selection, and 4-GPU DDP workflows.
 \cvListEnd
 
 \section{Education}
 \cvListStart
 \cvSubheading
   {University of Liberal Arts Bangladesh (ULAB)}{Dhaka, Bangladesh}
-  {B.Sc.\ Computer Science and Engineering}{Jun 2019 -- Feb 2023}
+  {B.Sc.\ Computer Science and Engineering}{Summer 2019 -- Fall 2022}
 \item[] \small
   \textbf{CGPA:} 3.96/4.00 \quad \textbf{Distinction:} Summa Cum Laude (top 1\%; conferred May 2024) \\
   \textbf{Honors:} Vice Chancellor's Honors List; Dean's List Scholarship (3$\times$) \\
-  \textbf{Relevant coursework:} Machine Learning, Artificial Intelligence, Computer Vision, Natural Language Processing, Algorithms, Software Engineering
+  \textbf{Relevant coursework:} Artificial Intelligence, Digital Image Processing, Algorithms, Data Structures, Statistics and Probability, Software Engineering
 \cvListEnd
 
 \section{Publications}
 \cvListStart
 \cvItem
-    {\textbf{Akanda, M.B.A.N.}, Ahmed, M., Rabby, A.S.A., \& Rahman, F.}
-    {\textit{Optimum Deep Learning Method for Document Layout Analysis in Low Resource Languages.} ACM Southeast Conference (ACM SE'24), 199--204. \href{https://doi.org/10.1145/3603287.3651184}{doi:10.1145/3603287.3651184}}
+    {\textbf{Akanda, M.B.A.N.}$^*$, Ahmed, M.$^*$, Rabby, A.S.A., \& Rahman, F.}
+    {\textit{Optimum Deep Learning Method for Document Layout Analysis in Low Resource Languages.} ACM Southeast Conference (ACM SE'24), 199--204. \href{https://doi.org/10.1145/3603287.3651184}{doi:10.1145/3603287.3651184}. $^*$Equal contribution.}
 \cvItem
     {\textbf{Akanda, M.B.A.N.}, Prodhan, M., Sarwar, S., Raatul, A.M., Paul, B.}
     {\textit{Voice Controlled Home Automation with Cloud-Based Environment Monitoring System.} ICTCS 2022, Lecture Notes in Networks and Systems, vol.\ 623, Springer, Singapore. \href{https://doi.org/10.1007/978-981-19-9638-2_21}{doi:10.1007/978-981-19-9638-2\_21}}
-\cvListEnd
-
-\section{Research Profile}
-\cvListStart
-\cvItem{Primary theme}{Document intelligence in low-resource settings: layout analysis, printed/handwritten OCR, and robust extraction from noisy real-world documents.}
-\cvItem{Secondary theme}{Efficient multimodal ML systems (LLM/VLM and speech pipelines), including quantization, retrieval augmentation, and reliability-aware evaluation.}
-\cvItem{Research style}{Problem-driven experimentation with emphasis on reproducibility, baseline comparisons, and deployment-aware validation.}
 \cvListEnd
 
 \section{Research and Professional Experience}
@@ -110,10 +105,10 @@ Document AI and OCR for low-resource languages, robust ML under distribution shi
 \cvSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh}
 {Senior Machine Learning Engineer}{Sep 2025 -- present}
 \cvItemListStart
-  \cvItem{Document AI and OCR systems}{Worked on enterprise Bengali OCR and document layout analysis pipelines at operational scale (\textbf{10,000+} documents/day), with focus on robust extraction from heterogeneous document formats.}
-  \cvItem{Efficiency-aware model optimization}{Applied quantization to multimodal vision-language components (Qwen2.5-VL), reducing memory footprint by approximately \textbf{4$\times$} while preserving practical task performance.}
-  \cvItem{Evaluation-oriented engineering}{Developed alignment components that improved conversion reliability (\textbf{+25\%} conversion accuracy in internal benchmarks), reducing downstream manual correction load.}
-  \cvItem{Research relevance}{Translated production bottlenecks (layout variance, OCR noise, memory limits) into experimentable questions around model robustness and efficiency.}
+  \cvItem{Current research project (ongoing)}{Leading Bengali handwriting OCR fine-tuning with a reproducible workflow: strict JSONL validation, W\&B sweep screening, and 4-GPU DDP full training for final model selection.}
+  \cvItem{Objective-aligned evaluation}{Using a joint text-word-layout optimization target (`eval\_text\_word\_layout\_score`) with parse-success gating to prioritize both textual correctness and structural fidelity.}
+  \cvItem{Training-system rigor}{Implemented sweep-equivalent global batch behavior across GPU counts and DDP-safe OCR metrics controls to preserve comparability between screening runs and full training.}
+  \cvItem{Research relevance}{Converting production constraints (layout variance, OCR noise, memory limits) into measurable experiments on robustness, efficiency, and deployment reliability.}
 \cvItemListEnd
 
 \cvSubheading{Apurba Technologies Ltd.}{Dhaka, Bangladesh}
@@ -121,7 +116,7 @@ Document AI and OCR for low-resource languages, robust ML under distribution shi
 \cvItemListStart
   \cvItem{Low-resource document layout analysis}{Built and evaluated YOLOv8-based layout models for Bengali document structures (\textbf{85\%+} internal accuracy), supporting OCR quality improvements in deployment.}
   \cvItem{Inference optimization}{Implemented 8-bit quantization and measured \textbf{2$\times$} faster inference with reduced memory usage, enabling broader operational deployment.}
-  \cvItem{Research dissemination}{Contributed to studies that led to publications at ACM SE'24 and Springer (ICTCS/LNNS).}
+  \cvItem{Research dissemination}{Co-first author on ACM SE'24 Bengali DLA study (BADLAD); co-author on Springer ICTCS 2022 paper.}
 \cvItemListEnd
 
 \cvSubheading{Pixalate Inc.}{Remote (California, USA)}
@@ -159,6 +154,22 @@ Document AI and OCR for low-resource languages, robust ML under distribution shi
 \cvItemListEnd
 \cvListEnd
 
+\section{Leadership}
+\cvListStart
+\cvSubheading{ULAB Computer Programming Club}{Dhaka, Bangladesh}
+{President}{2022 -- 2023}
+\cvItemListStart
+  \cvItem{Contest organization}{Led \textbf{4} UCPC competitive programming contests (2022--2023), including Take Off Summer 2022 (\textbf{40+} participants).}
+  \cvItem{Problem setting}{Lead problem setter, Take Off Summer 2022 (\textbf{6}-problem set; ULAB official announcement).}
+\cvItemListEnd
+\cvListEnd
+
+\section{Biomedical Imaging (Kaggle / RSNA)}
+\cvListStart
+\cvItem{RSNA-MICCAI Brain Tumor Radiogenomic Classification}{Built PyTorch EfficientNet3D pipelines on mpMRI DICOM (FLAIR, T1w, T1wCE, T2w) for MGMT promoter methylation classification; middle-slice volume stacking and DICOM preprocessing with VOI LUT. \href{https://www.kaggle.com/code/mutasimbillahnoman/torch-efficientnet3d-for-mri-no-train}{Kaggle}}
+\cvItem{RSNA 2023 Abdominal Trauma Detection}{Explored CT trauma detection with PyTorch 2.5D EfficientNet CNN (5-fold CV), 3D R3D-18 on DICOM slices, KerasCV CNN training, and DICOM-to-3D tensor preprocessing. \href{https://www.kaggle.com/code/mutasimbillahnoman/rsna-2-5d-cnn-training-pytorch}{Kaggle}}
+\cvListEnd
+
 \section{Selected Projects (Research-Relevant)}
 \cvListStart
 \cvItem{SenseScan (Bengali handwritten OCR)}{Pipeline with EAST/LANMS detection, CRNN recognition, and reading-order assembly; designed for experimentation in low-resource OCR settings. \href{https://github.com/noman024/SenseScan}{GitHub}}
@@ -184,6 +195,7 @@ Document AI and OCR for low-resource languages, robust ML under distribution shi
 \cvListStart
 \cvSubItem{Languages}{Python, TypeScript, SQL}
 \cvSubItem{ML/AI}{PyTorch, TensorFlow, scikit-learn, Hugging Face, OpenCV, quantization workflows}
+\cvSubItem{Medical imaging}{pydicom, DICOM preprocessing, EfficientNet3D, 3D/video CNNs (R3D-18), KerasCV}
 \cvSubItem{LLM/NLP}{RAG pipelines, vector search (pgvector/ChromaDB), vLLM, Ollama}
 \cvSubItem{Systems}{FastAPI, Docker, PostgreSQL, Redis, SQLite, async crawling and data pipelines}
 \cvSubItem{Experimentation}{MLflow, Weights \& Biases, pytest, Vitest}
@@ -195,6 +207,7 @@ Document AI and OCR for low-resource languages, robust ML under distribution shi
 \cvItem{Vice Chancellor's Honors List}{Scholarship recipient}
 \cvItem{Dean's List Scholarship}{Awarded 3 times}
 \cvItem{Programming contests}{Problem setter and award recipient in ULAB Take Off contests}
+\cvItem{ULAB Computer Programming Club}{President (2022--2023); organized \textbf{4} contests; Take Off Summer 2022 (\textbf{40+} participants)}
 \cvListEnd
 
 \end{document}
